@@ -1,0 +1,301 @@
+@font-face{
+    font-family: 'Fuente';
+    src: url(../font/PTSans-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Fuente;
+}
+body{
+    background-color: #457a1a;
+    margin-top: 6%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 0;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* HEADER */
+
+
+
+.menu img{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.header{
+    background-color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.header img{
+    height: 50px;
+    margin: 1%;
+}
+
+.menu {
+    background-color: #6ABB27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navegadorcito{
+    padding: 0;
+    background-color: #D2FDAC;
+}
+.menu  ul{
+    list-style: none;
+}
+.menu ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.menu ul li{
+    float: left;
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 11px 50px;
+    font-size: 1.6em;
+}
+.menu ul li a:hover{
+    background-color:#5CA123;
+    color: white;
+}
+/* SUBMENU */
+
+.menu ul li ul{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+.menu ul li:hover > ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu ul li ul li{
+    background: #6ABB27;
+    margin: 1px 0px;
+    width: 90%;
+    position: relative;
+    align-self: flex-start;
+}
+.menu ul li ul li a{
+    font-size: 1.3em;
+}
+.menu ul li ul li ul{
+    right: -150px;
+    top: 0;
+}
+
+/* MAIN */
+
+.content{
+    background-color: #D2FDAC;
+    padding: 2%;
+    padding-bottom: 4%
+}
+
+h2{
+    color: rgb(80, 80, 80);
+    text-align: center;
+    margin: 1% 13%;
+    margin-top: 3%;
+    font-size: 5ex;
+    border-bottom: 1px solid rgb(145, 142, 142);
+}
+section,.index{
+    background-color: #bdf390;
+    border-radius: 3%;
+    margin:3% 10%;
+    padding: 2%;
+    margin-bottom: 1%;
+}
+main section article{
+    padding: 2%;
+}
+main section article img{
+    width: 60%;
+    height: 300px;
+    margin-left:20%;
+    border-radius: 3%;
+}
+main section article h4{  
+    text-align: center;
+    margin-top: 3%; 
+    font-size: 4ex ;  
+    color: rgb(80, 80, 80);
+}
+article p{
+    text-align: justify;
+    font-size: 2.5ex ;
+    margin-top: 2%;
+    color: rgb(80, 80, 80);
+}
+
+.dot{
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+    margin: 4px 2px;
+    background-color: #D2FDAC;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease;
+}
+.dot:hover{
+    background-color:#fff;
+    width: 24px;
+    height: 24px;
+    margin: 3px 1px;
+}
+
+.dotp{
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+    margin: 4px 2px;
+    background-color: #D2FDAC;
+    border-radius: 50%;
+    display:inline-block;
+    text-align:center;
+    transition: background-color .6s ease;
+
+}
+
+.dotp:hover{
+    background-color:#fff;
+    width: 24px;
+    height: 24px;
+    margin: 3px 1px;
+}
+.slideshow__circles, .slideshow__circles_p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #6ABB27;
+    color: white;
+    text-align: center;
+    padding:30px;
+    font-size: 3ex;
+}
+footer div p{
+    font-size: 1.5ex;
+}
+.fot{
+    font-size: 1.3ex;
+}
+footer div hr{
+    margin: 3px 35%;
+}
+
+
+/* INPUT */
+
+ul{
+    list-style: none;
+}
+.indi{
+    margin: 3% 30%;
+}
+input{
+    width: 300px;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-color:#D2FDAC;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 3%  5% 5%;
+}
+
+#boton{
+    width: 100px;
+    color: white;
+    background-color: #6ABB27;
+    border-radius: 5%;
+    border-color:#6ABB27;
+
+}
+
+/* Sesion */
+
+.sesion{
+    background-color: #FFFFFF;
+    padding: 20px 10px;
+}
+.sesion h3 a{
+    text-decoration: none;
+    color:#D2FDAC;
+    background-color:#6ABB27;
+    border-radius: 5%;
+    float: right;
+    padding: 4px 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+
+}
+.sesion h3 a:hover{
+    color:#5CA123;
+    background-color:#457a1a;
+    padding: 5px 7px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.sesion h3{
+    color:#5CA123; 
+}
+
+
+@media only screen and (max-width: 800px){    
+    body, header, section, article, .content, main{
+        margin: 0;
+    }
+
+    table{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    h2{
+        font-size: 3.5ex;
+    }
+    main section article h4{ 
+        font-size: 3ex ; 
+    }
+    ul li{
+        width: 100%;
+        text-align: center;
+    }
+    ul li ul{
+        display: flex;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        position: initial;
+    }
+
+}

@@ -1,0 +1,11 @@
+use PistaMed;                                                                      
+insert into producto values (1, Virogrip, 20.99, CAST ('2020-12-31' as datetime),   5,  4, 1)
+insert into producto values (2, Pepto Bismol, 9.99, CAST ('2021-2-10' as datetime), 8,  5, 6)
+insert into producto values (3, Omeprazol, 21.99, CAST ('2021-2-15' as datetime),   10, 3, 5)
+insert into producto values (4, Alka Seltzer, 2.99, CAST ('2021-3-11' as datetime), 20, 2, 3)
+insert into producto values (5, Acetaminofén, 4.99, CAST ('2021-1-9' as datetime),  15, 1, 2)
+insert into producto values (6, Ambroxol, 14.98, CAST ('2021-2-2' as datetime),     3,  9, 4)
+insert into producto values (7, Paracetamol, 11.99, CAST ('2021-1-15' as datetime), 1,  8, 9)
+insert into producto values (8, Cefalexina, 21.99, CAST ('2021-1-3' as datetime),   4,  7,  7)
+insert into producto values (9, Carbocisteína, 8, CAST ('2021-2-7' as datetime),    4, 10,  8)
+insert into producto values (10, Dulcolax, 8, CAST ('2021-2-7' as datetime),        8,  6, 10)
